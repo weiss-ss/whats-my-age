@@ -41,7 +41,7 @@ public class checkInput {
         if (yf.isEmpty()) {
             return "Year format is required!";
         }
-        
+
         return "Pass";
     }
 
@@ -52,12 +52,14 @@ public class checkInput {
             int y = Integer.parseInt(year.replace(" ", ""));
 
             LocalDate birthDate;
-
+            //Buddhist Era(B.E.)
             if (yearFormat.equals("Buddhist Era(B.E.)")) {
                 birthDate = LocalDate.of(y - 543, m, d);
+            //Hijrah Era(A.H.)
             } else if (yearFormat.equals("Hijrah Era(A.H.)")) {
                 HijrahDate hiData = HijrahDate.of(y, m, d);
                 birthDate = LocalDate.from(hiData);
+            //Christian Era(A.D.)
             } else {
                 birthDate = LocalDate.of(y, m, d);
             }

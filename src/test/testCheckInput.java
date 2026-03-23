@@ -5,7 +5,7 @@ public class testCheckInput {
     public static void main(String[] args) {
         String dd = "28";
         String mm = "10";
-        String yy = "2544";
+        String yy = "2554";
         String ty = "Buddhist Era(B.E.)";
 
         checkInput check = new checkInput();
