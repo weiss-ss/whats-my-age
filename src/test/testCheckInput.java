@@ -3,10 +3,10 @@ import logic.checkInput;
 
 public class testCheckInput {
     public static void main(String[] args) {
-        String dd = "29";
-        String mm = "2";
-        String yy = "2569";
-        String ty = "";
+        String dd = "28";
+        String mm = "10";
+        String yy = "2544";
+        String ty = "Buddhist Era(B.E.)";
 
         checkInput check = new checkInput();
         String result = check.isNum(dd, mm, yy, ty);
