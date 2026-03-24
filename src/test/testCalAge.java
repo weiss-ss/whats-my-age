@@ -5,8 +5,8 @@ import logic.checkInput;
 
 public class testCalAge {
     public static void main(String[] args) {
-        String day = "23";
-        String month = "12";
+        String day = "8";
+        String month = "10";
         String year = "2004";
         String yearFormat = "Christian Era(A.D.)";
 
